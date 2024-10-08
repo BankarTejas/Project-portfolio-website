@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6a554;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px; /* Adjusted to make room for the partition */
+}
+
+.highlight {
+    color: rgb(215, 0, 0);
+}
+
+.blink {
+    animation: blink-animation 1s steps(1) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Partition/Divider Between Paragraph and Button */
+.divider {
+    width: 300px; /* Width of the partition */
+    height: 2px; /* Thickness of the line */
+    background-color: #000000; /* Color of the partition */
+    margin: 20px 0; /* Space around the divider */
+    border-radius: 2px; /* Rounded edges for the line */
+}
+
+/* Button and Social Icons Adjustments */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f79800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #121208;
+}
+
+.social-icons {
+    margin-top: 30px; /* Creates space between the button and icons */
+}
+
+.social-icons a {
+    margin-right: 15px; /* Increased spacing between icons */
+    color: #333;
+    font-size: 28px; /* Slightly increased icon size */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+
+/* Avatar Positioning */
+.avatar img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Adjusting positioning of button and social icons */
+.hero-content .btn {
+    margin-bottom: 30px; /* Add space below the button */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns button and icons to the left */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

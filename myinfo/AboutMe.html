@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Tejas</title>
+
+    <!-- Enhanced Style Tag for CSS -->
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #000000, #eed9d9); /* Soft gradient background */
+            color: #333;
+            line-height: 1.6;
+            padding: 40px;
+        }
+
+        /* About Me Heading */
+        h1 {
+            font-size: 48px;
+            color: #000000; /* Dark blue */
+            text-align: center;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        /* Underline Animation for Heading */
+        h1::after {
+            content: "";
+            display: block;
+            width: 250px;
+            height: 4px;
+            background-color: #d78585; /* Matches heading underline */
+           
+            margin: 10px auto;
+            transition: width 0.3s ease-in-out;
+        }
+
+        h1:hover::after {
+            width: 150px; /* Expands underline on hover */
+        }
+
+        /* Horizontal Line (Divider) */
+   
+
+        /* Paragraph Styling */
+        p {
+            font-size: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Animation for Paragraph */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styling for Smaller Screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+    
+    <p>  
+           Hi, I’m <a href="/index.html">Tejas Bankar</a> , and I’ve recently embarked on an exciting journey in computer engineering. As a first-year
+        student, I’m diving deep into the world of technology and programming, driven by my passion for innovation and
+        problem-solving. The endless possibilities that engineering offers inspire me to push boundaries and constantly
+        learn more about the systems that shape our digital world.
+        <br><br>
+       
+          Beyond my academic pursuits, I’m enthusiastic about collaborating with others and exchanging ideas. I believe in
+        the power of teamwork and am always open to learning from peers and mentors. This journey in computer
+        engineering is just the beginning, and I’m excited about the opportunities that lie ahead.
+    </p>
+    
+</body>
+
+</html>
